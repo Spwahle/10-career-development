@@ -24,7 +24,7 @@ module.exports = class {
   constructor() {
     this.head = null;
   }
-
+//0(1)
   prepend(val) {
     let node = new Node(val);
     if(!this.head) {
@@ -35,7 +35,7 @@ module.exports = class {
     this.head = node;
     return node;
   }
-
+//O(1)
   append(val) {
     let node = new Node(val);
     let lastNode;
@@ -56,7 +56,7 @@ module.exports = class {
     }
   }
 
-
+//0(1)
   reverse(){
     let current = this.head;
     let previous = null;
@@ -72,5 +72,6 @@ module.exports = class {
     return previous;
   }
 
+  
 
 };
